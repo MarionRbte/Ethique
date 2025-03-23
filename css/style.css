@@ -9,9 +9,11 @@ main {
 }
 
 body {
-  background: linear-gradient(to bottom, #ffffff 150px, rgb(107, 107, 200)); 
-  color: #333; /* Couleur du texte */
+  background: linear-gradient(to bottom, #ffffff 250px, rgb(107, 107, 200)); /* Dégradé de blanc à bleu */
+  min-height: 100vh; /* Assure que le body couvre toute la hauteur de la fenêtre */
+  color: #333;
 }
+
 
 
 
@@ -21,9 +23,18 @@ main h1 {
   color: red-700;
 }
 main h2 {
-  font-size: 20px;
+  font-size: 22px;
   color: #d26262;
   font-style: italic;
+  text-align: center;
+}
+main h3 {
+  font-size: 20px;
+  color: #333;
+}
+main h4 {
+  font-size: 15px;
+  color: #333;
 }
 
 main p {
@@ -40,10 +51,17 @@ ul {
 /* Navbar */
 header nav {
   background-color: #ffffff; /* Fond blanc pour la navbar */
-  padding-top: 5px; /* Ajuste l'espacement vertical supérieur */
-  padding-bottom: 5px; /* Ajuste l'espacement vertical inférieur */
   height: auto; /* Assure que la hauteur s'ajuste automatiquement au contenu */
+  padding-top: 1px; /* Réduit l'espacement supérieur */
+  padding-bottom: 1px; /* Réduit l'espacement inférieur */
 }
+
+header nav .container {
+  padding-left: 10px; /* Réduit l’espace à gauche */
+  padding-right: 10px; /* Réduit l’espace à droite */
+  max-width: 100%; /* Évite que la navbar soit trop large */
+}
+
 
 header nav .navbar-nav .nav-link {
   color: #333; /* Texte sombre pour la navbar */
@@ -52,12 +70,17 @@ header nav .navbar-nav .nav-link {
   padding-right: 10px; /* Espacement intérieur droit des liens */
 }
 
-header nav .navbar-nav .nav-link:hover {
-  color: #d26262; /* Couleur au survol */
+header nav .navbar-nav .nav-link-actif {
+  color: #d26262; /* Couleur rouge pour l'élément actif */
+  text-decoration: none; /* Pas de soulignement */
+  background-color: transparent; /* Pas de fond coloré */
+  border: none; /* Pas de bordure */
+  outline: none; /* Pas de contour visible lors du focus */
+  white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
 }
-/* Navbar active link */
-.nav-link.active {
-  color: #d26262; /* Texte en rouge pour l'élément actif */
+header nav .navbar-nav .nav-link:hover {
+  color: #b7b5b5; /* Rouge un peu plus clair au survol */
+  transition: color 0.3s ease-in-out;
 }
 
 
@@ -67,23 +90,23 @@ header nav .navbar-toggler-icon {
 }
 
 header nav .navbar-brand img {
-  width: 150px; /* Taille par défaut pour les petits écrans */
-  height: auto; /* La hauteur s'ajuste automatiquement pour conserver les proportions de l'image */
+  width: 180px; /* Augmente la largeur de l'image */
+  height: auto; /* Garde les proportions */
+  max-width: 100%; /* Évite que l'image déborde */
 }
 
 @media (min-width: 992px) {
-  /* Pour les écrans de 992px ou plus */
   header nav .navbar-brand img {
-    width: 25vw; /* L'image prendra 25% de la largeur de l'écran */
+    width: 10vw; /* Augmenter à 25% pour les très grands écrans */
   }
 }
 
 @media (min-width: 1200px) {
-  /* Pour les écrans de 1200px ou plus */
   header nav .navbar-brand img {
-    width: 20vw; /* Réduire à 20% pour les très grands écrans */
+    width: 15vw; /* Augmenter à 25% pour les très grands écrans */
   }
 }
+
 
 
 
@@ -100,8 +123,29 @@ header nav .navbar-brand img {
 }
 
 
+
+
+.list-group {
+  background-color: transparent !important;
+  border: none;
+}
+
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.1) !important; /* Légèrement transparent */
+  border: none; /* Supprime les bordures */
+  color: #706e6e; /* Texte en gris clair pour la lisibilité */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important; /* Effet au survol */
+}
+
+
+
+
 footer {
-  background-color:  rgb(107, 107, 200);
+  background-color:  rgb(123, 123, 202);
   color: #fff;
   padding: 20px 0;
   text-align: center;
