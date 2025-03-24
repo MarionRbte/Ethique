@@ -16,152 +16,187 @@
 		<!-- Lien vers ton fichier CSS personnalisé -->
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- Chemin vers le fichier CSS séparé -->
-	</head>
-	<body>
-		<!-- Header avec une navigation -->
+
 		<header>
 			<section class="py-5">
-				<nav class="navbar navbar-expand-lg">
-					<div class="container">
-						<a class="navbar-brand" href="">
-							<img alt="Logo" class="img-fluid" src="images/logo.jpg" />
-						</a>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav ms-auto my-2 my-lg-0">
-								<li class="nav-item me-4"><a class="nav-link" href="index.html">Question Ethique</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="enquetes.html">Enquêtes/littérature</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="ethiques.html">Ethiques</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="synthese.html">Synthèse</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="recommandations.html">Recommandations</a></li>
-								<li class="nav-item me-4"><a class="nav-link-actif" href="equipe.html">Equipe</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="sources.html">Sources</a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+				<div id="navbar-container"></div>
+				<script src="/js/navbar.js"></script>	
 			</section>
 		</header>
 
+	</head>
+	<body>
 		<!-- Section principale -->
 		<main class="d-flex justify-content-center align-items-center min-vh-100">
-			<div class="container text-center">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="lc-block mb-4">
-							<h1 class="display-2 mb-0"><b>Notre Équipe</b></h1>
-							<p>
-								Nous sommes un groupe d'étudiants de la Faculté Polytechnique de Mons travaillant ensemble pour ce
-								projet. Voici les membres de notre équipe :
-							</p>
+			<div class="container-fluid text-center">
+				<div class="card shadow-lg bg-light-custom mx-auto w-100">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="lc-block mb-4">
+									<h1 class="display-2 mb-0 text-center"><b>Notre Équipe</b></h1>
+									<p>
+										Nous sommes un groupe d'étudiants de la Faculté Polytechnique de Mons travaillant ensemble pour ce
+										projet. Voici les membres de notre équipe :
+									</p>
+								</div>
+								<!-- /lc-block -->
+							</div>
 						</div>
-						<!-- /lc-block -->
-					</div>
-				</div>
 
-				<div class="row pt-4">
-					<!-- Darvai Hugo -->
-					<div class="col-md-6 text-center py-4">
-						<div class="lc-block mt-2 py-2 border-top">
-							<h5><strong>Darvai Hugo</strong></h5>
-							<small class="text-secondary" style="letter-spacing: 1px">
-								Étudiant en Informatique et gestion à spécialité Intelligence Artificielle
-							</small>
+						<div class="row pt-4">
+							<!-- Darvai Hugo -->
+							<div class="col-md-6 text-center py-4">
+								<div class="lc-block mt-2 py-2 border-top">
+									<h5><strong>Darvai Hugo</strong></h5>
+									<small class="text-secondary" style="letter-spacing: 1px">
+										Étudiant en Informatique et gestion à spécialité Intelligence Artificielle
+									</small>
+								</div>
+								<!-- /lc-block -->
+								<div class="lc-block">
+									<img
+										alt="Darvai Hugo"
+										class="rounded-circle mb-3"
+										src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80"
+										style="height: 10vh"
+										loading="lazy"
+									/>
+									<div>
+										<p>Description Hugo</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Muscato Aysel -->
+							<div class="col-md-6 text-center py-4">
+								<div class="lc-block mt-2 py-2 border-top">
+									<h5><strong>Muscato Aysel </strong></h5>
+									<small class="text-secondary" style="letter-spacing: 1px">
+										Étudiante en Informatique et gestion à spécialité Intelligence Artificielle
+									</small>
+								</div>
+								<!-- /lc-block -->
+								<div class="lc-block">
+									<img
+										alt="Muscato Aysel"
+										class="rounded-circle mb-3"
+										src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80"
+										style="height: 10vh"
+										loading="lazy"
+									/>
+									<div>
+										<p>Description Aysel</p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<!-- /lc-block -->
-						<div class="lc-block">
-							<img
-								alt="Darvai Hugo"
-								class="rounded-circle mb-3"
-								src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80"
-								style="height: 10vh"
-								loading="lazy"
-							/>
-							<div>
-								<p>Description Hugo</p>
+
+						<div class="row pt-4">
+							<!-- Robette Marion -->
+							<div class="col-md-6 text-center py-4">
+								<div class="lc-block mt-2 py-2 border-top">
+									<h5><strong>Robette Marion</strong></h5>
+									<small class="text-secondary" style="letter-spacing: 1px">
+										Étudiante en Informatique et gestion à spécialité Intelligence Artificielle
+									</small>
+								</div>
+								<!-- /lc-block -->
+								<div class="lc-block">
+									<img
+										alt="Robette Marion"
+										class="rounded-circle mb-3"
+										src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80"
+										style="height: 10vh"
+										loading="lazy"
+									/>
+									<div>
+										<p>Description Marion</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Ye Hao -->
+							<div class="col-md-6 text-center py-4">
+								<div class="lc-block mt-2 py-2 border-top">
+									<h5><strong>Ye Hao</strong></h5>
+									<small class="text-secondary" style="letter-spacing: 1px">
+										Étudiant en Informatique et gestion à spécialité Intelligence Artificielle
+									</small>
+								</div>
+								<!-- /lc-block -->
+								<div class="lc-block">
+									<img
+										alt="Ye Hao"
+										class="rounded-circle mb-3"
+										src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80"
+										style="height: 10vh"
+										loading="lazy"
+									/>
+									<div>
+										<p>Description Hao</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<!-- Muscato Aysel -->
-					<div class="col-md-6 text-center py-4">
-						<div class="lc-block mt-2 py-2 border-top">
-							<h5><strong>Muscato Aysel </strong></h5>
-							<small class="text-secondary" style="letter-spacing: 1px">
-								Étudiante en Informatique et gestion à spécialité Intelligence Artificielle
-							</small>
-						</div>
-						<!-- /lc-block -->
-						<div class="lc-block">
-							<img
-								alt="Muscato Aysel"
-								class="rounded-circle mb-3"
-								src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80"
-								style="height: 10vh"
-								loading="lazy"
-							/>
-							<div>
-								<p>Description Aysel</p>
+					<div class="row justify-content-center pb-5">
+						<div class="card col-md-4 mt-100">
+							<div class="card-content">
+								<div class="card-body p-0">
+									<div class="profile"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg"> </div>
+									<div class="card-title mt-4"> Hugo DARVAI<br /> <small>titre</small> </div>
+									<div class="card-subtitle">
+										<p> <small class="text-muted"> 	Étudiant en Informatique et gestion à spécialité Intelligence Artificielle	</small> </p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-
-				<div class="row pt-4">
-					<!-- Robette Marion -->
-					<div class="col-md-6 text-center py-4">
-						<div class="lc-block mt-2 py-2 border-top">
-							<h5><strong>Robette Marion</strong></h5>
-							<small class="text-secondary" style="letter-spacing: 1px">
-								Étudiante en Informatique et gestion à spécialité Intelligence Artificielle
-							</small>
-						</div>
-						<!-- /lc-block -->
-						<div class="lc-block">
-							<img
-								alt="Robette Marion"
-								class="rounded-circle mb-3"
-								src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80"
-								style="height: 10vh"
-								loading="lazy"
-							/>
-							<div>
-								<p>Description Marion</p>
+						<div class="card col-md-4 mt-100">
+							<div class="card-content">
+								<div class="card-body p-0">
+									<div class="profile"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg"> </div>
+									<div class="card-title mt-4"> Aysel MUSCATO<br /> <small>titre</small> </div>
+									<div class="card-subtitle">
+										<p> <small class="text-muted"> 	Étudiant en Informatique et gestion à spécialité Intelligence Artificielle	</small> </p>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-
-					<!-- Ye Hao -->
-					<div class="col-md-6 text-center py-4">
-						<div class="lc-block mt-2 py-2 border-top">
-							<h5><strong>Ye Hao</strong></h5>
-							<small class="text-secondary" style="letter-spacing: 1px">
-								Étudiant en Informatique et gestion à spécialité Intelligence Artificielle
-							</small>
+						<div class="card col-md-4 mt-100">
+							<div class="card-content">
+								<div class="card-body p-0">
+									<div class="profile"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg"> </div>
+									<div class="card-title mt-4"> Marion ROBETTE<br /> <small>titre</small> </div>
+									<div class="card-subtitle">
+										<p> <small class="text-muted"> 	Étudiante en Informatique et gestion à spécialité Intelligence Artificielle	</small> </p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<!-- /lc-block -->
-						<div class="lc-block">
-							<img
-								alt="Ye Hao"
-								class="rounded-circle mb-3"
-								src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80"
-								style="height: 10vh"
-								loading="lazy"
-							/>
-							<div>
-								<p>Description Hao</p>
+						<div class="card col-md-4 mt-100">
+							<div class="card-content">
+								<div class="card-body p-0">
+									<div class="profile"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg"> </div>
+									<div class="card-title mt-4"> Hao YE<br /> <small>titre</small> </div>
+									<div class="card-subtitle">
+										<p> <small class="text-muted"> 	Étudiant en Informatique et gestion à spécialité Intelligence Artificielle	</small> </p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+
+			
 		</main>
 
-		<!-- Footer -->
 		<footer>
-			<p>&copy; 2025 Mon Projet | <a href="privacy.html">Mentions légales</a></p>
+			<div id="footer-container"></div>
+			<script src="/js/footer.js"></script>
 		</footer>
 
 		<!-- Lien vers le JavaScript de Bootstrap via CDN -->

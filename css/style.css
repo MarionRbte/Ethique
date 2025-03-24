@@ -15,18 +15,29 @@ body {
 }
 
 
+.bg-light-custom {
+  background: rgba(255, 255, 255, 0.15); 
+  border-radius: 10px; 
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  max-width: 90%; 
+  width: 100%;
+}
 
 
 main h1 {
   font-size: 30px;
   font-weight: bold;
   color: red-700;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 main h2 {
   font-size: 22px;
-  color: #d26262;
+  color: #5727e6;
   font-style: italic;
   text-align: center;
+  padding-bottom: 10px;
 }
 main h3 {
   font-size: 20px;
@@ -42,7 +53,13 @@ main p {
   line-height: 1.6;
 }
 
+section{
+  padding-bottom: 30px;
+}
+
 ul {
+  list-style-type: circle;
+  content: "★";
   margin-left: 20px;
 }
 
@@ -62,7 +79,6 @@ header nav .container {
   max-width: 100%; /* Évite que la navbar soit trop large */
 }
 
-
 header nav .navbar-nav .nav-link {
   color: #333; /* Texte sombre pour la navbar */
   font-size: 16px; /* Taille de texte ajustée pour être plus compact */
@@ -70,8 +86,8 @@ header nav .navbar-nav .nav-link {
   padding-right: 10px; /* Espacement intérieur droit des liens */
 }
 
-header nav .navbar-nav .nav-link-actif {
-  color: #d26262; /* Couleur rouge pour l'élément actif */
+header nav .navbar-nav .nav-link.actif {
+  color: #6f62d2; /* Couleur rouge pour l'élément actif */
   text-decoration: none; /* Pas de soulignement */
   background-color: transparent; /* Pas de fond coloré */
   border: none; /* Pas de bordure */
@@ -162,4 +178,53 @@ footer a:hover {
 
 .container {
   max-width: 1000px;
+}
+
+/* ici pour les photos d'équipes */
+
+.icon {
+  position: relative;
+  bottom: 11px
+}
+
+.mt-100 {
+  margin-top: 100px
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%
+}
+
+.card {
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  background-color: rgba(255, 255, 255, 0.7) !important; /* Effet au survol */
+}
+
+.card-body {
+  position: relative;
+  bottom: 35px
+}
+
+.btn {
+  margin-top: 36px;
+  margin-bottom: 45px;
+  background-color: #AB47BC;
+  border: none;
+  color: #fff
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  color: #fff
+}
+
+.header {
+  padding-top: 40px
 }

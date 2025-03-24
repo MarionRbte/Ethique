@@ -15,45 +15,33 @@
 
 		<!-- Lien vers ton fichier CSS personnalisé -->
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- Chemin vers le fichier CSS séparé -->
-	</head>
-
-	<body>
-		<!-- Header avec une navigation -->
+		<!-- Chemin vers le fichier CSS séparé -->		
 		<header>
 			<section class="py-5">
-				<nav class="navbar navbar-expand-lg">
-					<div class="container">
-						<a class="navbar-brand" href="">
-							<img alt="Logo" class="img-fluid" src="images/logo.jpg" />
-						</a>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav ms-auto my-2 my-lg-0">
-								<li class="nav-item me-4"><a class="nav-link" href="index.html">Question Ethique</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="enquetes.html">Enquêtes/littérature</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="ethiques.html">Ethiques</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="synthese.html">Synthèse</a></li>
-								<li class="nav-item me-4"><a class="nav-link-actif" href="recommandations.html">Recommandations</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="equipe.html">Equipe</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="sources.html">Sources</a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+				<div id="navbar-container"></div>
+				<script src="/js/navbar.js"></script>	
 			</section>
 		</header>
 
+	</head>
+
+	<body>
 		<!-- Section principale -->
 		<main>
-			<div class="container"></div>
+			<div class="container-fluid">
+				<div class="card shadow-lg bg-light-custom mx-auto w-100">
+					<div class="card-body">
+						<h1 class="display-2 mb-0 text-center"><b>Recommendations</b></h1>
+					</div>
+				</div>
+			</div>
+		
 		</main>
 
 		<!-- Footer -->
 		<footer>
-			<p>&copy; 2025 Mon Projet | <a href="privacy.html">Mentions légales</a></p>
+			<div id="footer-container"></div>
+			<script src="/js/footer.js"></script>
 		</footer>
 
 		<!-- Lien vers le JavaScript de Bootstrap via CDN -->

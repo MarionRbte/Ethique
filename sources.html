@@ -15,149 +15,134 @@
 
 		<!-- Lien vers ton fichier CSS personnalisé -->
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- Chemin vers le fichier CSS séparé -->
-	</head>
-
-	<body>
-		<!-- Header avec une navigation -->
+		<!-- Chemin vers le fichier CSS séparé -->		
 		<header>
 			<section class="py-5">
-				<nav class="navbar navbar-expand-lg">
-					<div class="container">
-						<a class="navbar-brand" href="">
-							<img alt="Logo" class="img-fluid" src="images/logo.jpg" />
-						</a>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav ms-auto my-2 my-lg-0">
-								<li class="nav-item me-4"><a class="nav-link" href="index.html">Question Ethique</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="enquetes.html">Enquêtes/littérature</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="ethiques.html">Ethiques</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="synthese.html">Synthèse</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="recommandations.html">Recommandations</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="equipe.html">Equipe</a></li>
-								<li class="nav-item me-4"><a class="nav-link-actif" href="sources.html">Sources</a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+				<div id="navbar-container"></div>
+				<script src="/js/navbar.js"></script>	
 			</section>
 		</header>
 
+	</head>
+
+	<body>
 		<!-- Section principale -->
-		<main class="container py-5">
-			<h1 class="text-center mb-4">Sources</h1>
+		<main class="container-fluid py-5">
+			<div class="card shadow-lg bg-light-custom mx-auto w-100">
+				<div class="card-body">
+					<h1 class="text-center mb-4">Sources</h1>
 
-			<div class="list-group">
-				<a
-					href="https://www.education.gouv.fr/intelligence-artificielle-au-service-de-l-education-des-mesures-ambitieuses-pour-accompagner-les-416551"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					Ministère de l'Éducation nationale et de la Jeunesse. (s.d.). Intelligence artificielle au service de
-					l’éducation : des mesures ambitieuses pour accompagner les usages des élèves et des professeurs.
-				</a>
+					<div class="list-group">
+						<a
+							href="https://www.education.gouv.fr/intelligence-artificielle-au-service-de-l-education-des-mesures-ambitieuses-pour-accompagner-les-416551"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							Ministère de l'Éducation nationale et de la Jeunesse. (s.d.). Intelligence artificielle au service de
+							l’éducation : des mesures ambitieuses pour accompagner les usages des élèves et des professeurs.
+						</a>
 
-				<a
-					href="https://ecolebranchee.com/table-ronde-intelligence-artificielle-education/"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					École branchée. (s.d.). L’intelligence artificielle en éducation : une transformation sous le signe de
-					l’humain.
-				</a>
+						<a
+							href="https://ecolebranchee.com/table-ronde-intelligence-artificielle-education/"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							École branchée. (s.d.). L’intelligence artificielle en éducation : une transformation sous le signe de
+							l’humain.
+						</a>
 
-				<a
-					href="https://www.actuia.com/actualite/ia-et-enseignement-superieur-les-attentes-des-etudiants-selon-le-digital-education-council/"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					ActuIA. (s.d.). IA et enseignement supérieur : les attentes des étudiants selon le Digital Education Council.
-				</a>
+						<a
+							href="https://www.actuia.com/actualite/ia-et-enseignement-superieur-les-attentes-des-etudiants-selon-le-digital-education-council/"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							ActuIA. (s.d.). IA et enseignement supérieur : les attentes des étudiants selon le Digital Education Council.
+						</a>
 
-				<a
-					href="https://collimateur.uqam.ca/collimateur/lia-a-mange-nos-devoirs-quest-ce-qui-arrive-apres/"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					Collimateur – Veille pédagogique – UQAM. (s.d.). L’IA a mangé nos devoirs : qu’est-ce qui arrive après ?.
-				</a>
+						<a
+							href="https://collimateur.uqam.ca/collimateur/lia-a-mange-nos-devoirs-quest-ce-qui-arrive-apres/"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							Collimateur – Veille pédagogique – UQAM. (s.d.). L’IA a mangé nos devoirs : qu’est-ce qui arrive après ?.
+						</a>
 
-				<a
-					href="https://shs.cairn.info/intelligence-artificielle-vers-une-domination--9791031802138-page-55?lang=fr"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					Cairn.info. (s.d.). Intelligence artificielle : vers une domination ?.
-				</a>
+						<a
+							href="https://shs.cairn.info/intelligence-artificielle-vers-une-domination--9791031802138-page-55?lang=fr"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							Cairn.info. (s.d.). Intelligence artificielle : vers une domination ?.
+						</a>
 
-				<a
-					href="https://www.erudit.org/fr/revues/mee/2024-v47-n1-mee09676/1114564ar/"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					Érudit. (2024). Cinq enjeux d’évaluation face à l’émergence des IA – Mesure et évaluation en éducation.
-				</a>
+						<a
+							href="https://www.erudit.org/fr/revues/mee/2024-v47-n1-mee09676/1114564ar/"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							Érudit. (2024). Cinq enjeux d’évaluation face à l’émergence des IA – Mesure et évaluation en éducation.
+						</a>
 
-				<a
-					href="https://www.erudit.org/fr/revues/aea/2023-v13-n1-aea08904/1107538ar/"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					Érudit. (2023). Pour une utilisation juste, éthique et responsable de l’IA en éducation – Apprendre et
-					enseigner aujourd’hui.
-				</a>
+						<a
+							href="https://www.erudit.org/fr/revues/aea/2023-v13-n1-aea08904/1107538ar/"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							Érudit. (2023). Pour une utilisation juste, éthique et responsable de l’IA en éducation – Apprendre et
+							enseigner aujourd’hui.
+						</a>
 
-				<a
-					href="https://op.europa.eu/fr/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					Office des publications de l’Union européenne. (2022). Lignes directrices éthiques sur l’utilisation de
-					l’intelligence artificielle (IA) et des données dans l’enseignement et l’apprentissage à l’intention des
-					éducateurs.
-				</a>
+						<a
+							href="https://op.europa.eu/fr/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							Office des publications de l’Union européenne. (2022). Lignes directrices éthiques sur l’utilisation de
+							l’intelligence artificielle (IA) et des données dans l’enseignement et l’apprentissage à l’intention des
+							éducateurs.
+						</a>
 
-				<a
-					href="https://www.oecd.org/fr/education/ia-dans-les-statistiques-de-leducation-2023-adoption-avantages-defis.htm"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					OCDE. (2023). L’IA dans les statistiques de l’éducation 2023 [Adoption, avantages, défis].
-				</a>
+						<a
+							href="https://www.oecd.org/fr/education/ia-dans-les-statistiques-de-leducation-2023-adoption-avantages-defis.htm"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							OCDE. (2023). L’IA dans les statistiques de l’éducation 2023 [Adoption, avantages, défis].
+						</a>
 
-				<a
-					href="https://www.forbes.fr/technologie/lia-en-education-un-defi-dequilibre-entre-technologie-et-competences-humaines/"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					Forbes France. (s.d.). L’IA en éducation : un défi d’équilibre entre technologie et compétences humaines.
-				</a>
+						<a
+							href="https://www.forbes.fr/technologie/lia-en-education-un-defi-dequilibre-entre-technologie-et-competences-humaines/"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							Forbes France. (s.d.). L’IA en éducation : un défi d’équilibre entre technologie et compétences humaines.
+						</a>
 
-				<a
-					href="https://www.sciencespo.fr/fr/actualites/lintelligence-artificielle-est-elle-un-danger-pour-lenseignement-superieur/"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					Sciences Po. (s.d.). L’intelligence artificielle est-elle un danger pour l’enseignement supérieur ?.
-				</a>
+						<a
+							href="https://www.sciencespo.fr/fr/actualites/lintelligence-artificielle-est-elle-un-danger-pour-lenseignement-superieur/"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							Sciences Po. (s.d.). L’intelligence artificielle est-elle un danger pour l’enseignement supérieur ?.
+						</a>
 
-				<a
-					href="https://www.tandfonline.com/doi/full/10.1080/03075079.2024.2326956#d1e919"
-					class="list-group-item list-group-item-action"
-					target="_blank"
-				>
-					Joseph Crawford. (2024). When artificial intelligence substitutes humans in higher education: the cost of
-					loneliness, student success, and retention.
-				</a>
+						<a
+							href="https://www.tandfonline.com/doi/full/10.1080/03075079.2024.2326956#d1e919"
+							class="list-group-item list-group-item-action"
+							target="_blank"
+						>
+							Joseph Crawford. (2024). When artificial intelligence substitutes humans in higher education: the cost of
+							loneliness, student success, and retention.
+						</a>
+					</div>
+				</div>
 			</div>
 		</main>
 
 		<!-- Footer -->
 		<footer>
-			<p>&copy; 2025 Mon Projet | <a href="privacy.html">Mentions légales</a></p>
+			<div id="footer-container"></div>
+			<script src="/js/footer.js"></script>
 		</footer>
 
 		<!-- Lien vers le JavaScript de Bootstrap via CDN -->

@@ -16,202 +16,193 @@
 		<!-- Lien vers ton fichier CSS personnalisé -->
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- Chemin vers le fichier CSS séparé -->
-	</head>
-
-	<body>
-		<!-- Header avec une navigation -->
+		
 		<header>
 			<section class="py-5">
-				<nav class="navbar navbar-expand-lg">
-					<div class="container">
-						<a class="navbar-brand" href="">
-							<img alt="Logo" class="img-fluid" src="images/logo.jpg" />
-						</a>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav ms-auto my-2 my-lg-0">
-								<li class="nav-item me-4"><a class="nav-link" href="index.html">Question Ethique</a></li>
-								<li class="nav-item me-4"><a class="nav-link-actif" href="enquetes.html">Enquêtes/littérature</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="ethiques.html">Ethiques</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="synthese.html">Synthèse</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="recommandations.html">Recommandations</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="equipe.html">Equipe</a></li>
-								<li class="nav-item me-4"><a class="nav-link" href="sources.html">Sources</a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+				<div id="navbar-container"></div>
+				<script src="/js/navbar.js"></script>	
 			</section>
 		</header>
+	</head>
 
+
+
+	<body>
 		<!-- Section principale -->
-		<main class="container py-5">
-			<h1 class="text-center mb-4">Observations dans la littérature</h1>
+		<main class="container-fluid py-5">
+			<div class="card shadow-lg bg-light-custom mx-auto w-100">
+				<div class="card-body">
 
-			<p>Les observations recueillies dans la littérature sont les suivantes :</p>
-			<ul>
-				<li>...</li>
-				<li>...</li>
-			</ul>
+					<h1 class="display-2 mb-0 text-center"><b>Observations</b></h1>
 
-			<!-- Conclusion sur la littérature -->
-			<section class="mt-5">
-				<div class="observation-card text-center">
-					<h2><i class="bi bi-lightbulb"></i> Conclusion sur la littérature</h2>
-					<p>À travers la littérature, nous avons observé que ...</p>
+					<h2 class="text-center mb-4">Observations dans la littérature</h1>
+
+					<p>Les observations recueillies dans la littérature sont les suivantes :</p>
+					<ul>
+						<li>...</li>
+						<li>...</li>
+					</ul>
+
+					<!-- Conclusion sur la littérature -->
+					<section class="mt-5">
+						<div class="observation-card text-center">
+							<h2><i class="bi bi-lightbulb"></i> Conclusion sur la littérature</h2>
+							<p>À travers la littérature, nous avons observé que ...</p>
+						</div>
+					</section>
+
+					<!-- Transition entre la littérature et les enquêtes -->
+					<div class="text-center my-5">
+						<hr class="my-4" />
+						<h2 class="fw-bold text-muted">De la théorie à la pratique : observations sur le terrain</h2>
+						<p class="text-muted">
+							Après avoir exploré les apports de la littérature, nous avons mené des enquêtes pour confronter ces éléments
+							aux réalités du terrain.
+						</p>
+						<hr class="my-4" />
+					</div>
+
+					<h2 class="text-center mb-4">Observations des enquêtes</h1>
+
+					<div class="row">
+						<!-- Section Élèves -->
+						<div class="col-md-6">
+							<div class="observation-card">
+								<h2><i class="bi bi-person"></i> Élèves</h2>
+								<p>Observations recueillies auprès des élèves :</p>
+								<ul>
+									<li>
+										Les élèves ont souvent des difficultés en mathématiques, mais n’utilisent pas ChatGPT pour cette
+										matière.
+									</li>
+									<li>Ils perçoivent l’IA comme un outil à l'instar d'Internet, leur apportant des réponses rapides.</li>
+									<li>La fréquence d'utilisation varie en fonction des élèves, certains l'utilisant quotidiennement.</li>
+									<li>L’utilisation est principalement scolaire, avec des fonctions comme résumer et traduire.</li>
+									<li>La véracité des informations n’est pas une préoccupation majeure pour les élèves.</li>
+									<li>Leur motivation principale est d’aller plus vite dans leurs tâches scolaires.</li>
+									<li>Ils ne se préoccupent pas particulièrement de l’impact de l’IA sur leur confiance en eux.</li>
+									<li>
+										La notion de mérite n’est pas un sujet de réflexion, ChatGPT étant vu comme une aide parmi tant
+										d’autres telle que les parents.
+									</li>
+									<li>Ils ne seraient pas perturbés si ChatGPT venait à disparaître.</li>
+									<li>ChatGPT ne pourrait pas remplacer un enseignant.</li>
+									<li>L’outil ne semble pas modifier leur manière d’apprendre ou d’étudier.</li>
+									<li>Aucun élève interrogé n’est fermement opposé à l’usage de ChatGPT.</li>
+
+									<!-- version GPT
+									<li>ChatGPT est perçu comme un outil similaire à Internet, apportant des réponses rapides.</li>
+									<li>Utilisé principalement pour l’école, notamment pour résumer et traduire.</li>
+									<li>Fréquence variable, mais souvent plusieurs fois par semaine.</li>
+									<li>Vérification des réponses rare, la rapidité est privilégiée.</li>
+									<li>Ne change pas leur manière d’apprendre, ni leur confiance en eux.</li>
+									<li>Son absence ne les perturberait pas, il est utile mais pas indispensable.</li>
+									<li>Pas de remise en question sur le mérite, considéré comme une aide parmi d’autres.</li>
+									<li>Ne peut pas remplacer un professeur, car l’humain reste essentiel.</li>
+									<li>Aucun rejet marqué de l’outil, mais pas une révolution dans leur apprentissage.</li>
+									-->
+								</ul>
+							</div>
+						</div>
+
+						<!-- Section Parents d'élèves -->
+						<div class="col-md-6">
+							<div class="observation-card">
+								<h2><i class="bi bi-people"></i> Parents d'élèves</h2>
+								<p>Observations recueillies auprès des parents :</p>
+								<ul>
+									<li>...</li>
+									<li>...</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Section Étudiants -->
+						<div class="col-md-6">
+							<div class="observation-card">
+								<h2><i class="bi bi-mortarboard"></i> Étudiants</h2>
+								<p>Observations recueillies auprès des étudiants :</p>
+								<ul>
+									<li>ChatGPT est perçu comme un outil pratique pour gagner du temps et faciliter certaines tâches.</li>
+									<li>Son utilisation est assez régulière, quelques fois par semaine, principalement pour corriger l’orthographe, reformuler des phrases ou chercher des idées.</li>
+									<li>Il est utilisé pour mieux comprendre et approfondir un sujet, clarifier des explications, approfondir un concept ou consulter des exemples de questions d’examen.</li>
+									<li>Les erreurs sont fréquentes, notamment dans certaines matières comme le droit. </li>
+									<li>La vérification et la recherche de sources sont essentielles pour les travaux importants.</li>
+									<li>Son usage ne modifie pas la méthode d’apprentissage, il reste un outil complémentaire.</li>
+									<li>Le principal avantage reste le gain de temps dans la réalisation des tâches académiques.</li>
+									<li>Sa disparition ne provoquerait pas de perturbation majeure, il est perçu comme un outil utile mais non indispensable.</li>
+									<li>Il ne contribue pas au développement de l’intelligence, mais favorise un certain esprit critique.</li>
+									<li>Son utilisation ne génère pas forcément de frustration.</li>
+									<li>La fierté du travail dépend de l’implication personnelle : s’il sert d’aide ponctuelle, elle est préservée, mais s’il fait tout à la place de l’étudiant, elle diminue.</li>
+									<li>En cas de difficulté, l’entraide entre étudiants reste privilégiée avant d’avoir recours à l’outil.</li>
+									<li>Ses limites résident dans son manque de fiabilité, la quantité limité de sources et connaissances.</li>
+									<li>Il ne peut pas remplacer un enseignant, qui apporte une interaction humaine, s'adapte aux étudiants, utilise des schémas.</li>
+									<li>Dans l’enseignement supérieur, il doit rester un OUTIL complémentaire et non une nécessité.</li>
+				
+									<!-- version GPT
+									<li>ChatGPT est un outil qui aide, mais ne fait pas le travail à leur place.</li>
+									<li>Utilisé pour reformuler, corriger et approfondir, surtout en recherche d’idées.</li>
+									<li>Fiabilité limitée : vérification nécessaire pour les travaux importants.</li>
+									<li>Ne change pas la méthode de travail, mais permet de gagner du temps.</li>
+									<li>Son absence ne serait pas un problème, il reste un outil parmi d’autres.</li>
+									<li>Peut réduire l’esprit critique et l’assiduité, mais utile s’il est bien utilisé.</li>
+									<li>Ne remplacera jamais un professeur, l’interaction humaine reste essentielle.</li>
+									<li>Devrait rester un outil complémentaire dans les études supérieures.</li>
+									-->
+								</ul>
+							</div>
+						</div>
+
+						<!-- Section Professeurs -->
+						<div class="col-md-6">
+							<div class="observation-card">
+								<h2><i class="bi bi-person-badge"></i> Professeurs</h2>
+								<p>Observations recueillies auprès des professeurs :</p>
+								<ul>
+									<li>...</li>
+									<li>...</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Section Doctorants -->
+						<div class="col-md-6">
+							<div class="observation-card">
+								<h2><i class="bi bi-book"></i> Doctorants</h2>
+								<p>Observations recueillies auprès des doctorants :</p>
+								<ul>
+									<li>ChatGPT est omniprésent dans leur quotidien et utilisé principalement pour des raisons professionnelles.</li>
+									<li>Son usage est systématique, souvent avec un abonnement pro pour profiter des fonctionnalités avancées.</li>
+									<li>Il est perçu comme un outil efficace pour gagner du temps, notamment pour accéder rapidement à l’information et améliorer certaines tâches comme la correction d’e-mails.</li>
+									<li>L’impact sur les compétences dépend de l’usage : une utilisation réfléchie peut enrichir les connaissances, tandis qu’un simple copier-coller risque d’appauvrir la compréhension.</li>
+									<li>La protection des données personnelles est un sujet de préoccupation, notamment si les informations saisies sont exploitées à d’autres fins.</li>
+									<li>La question du mérite n’est pas centrale, l’IA étant considérée comme un outil de travail complémentaire et non une tricherie.</li>
+									<li>L’adaptation aux nouvelles technologies est perçue comme une nécessité, et l’IA s’intègre progressivement à leur méthodologie, comme les correcteurs orthographiques.</li>
+									<li>Son impact sur l’apprentissage varie : certains réussissent des matières sans les comprendre réellement, ce qui peut poser problème sur le long terme.</li>
+									<li>L’évolution des lois et des régulations jouera un rôle clé dans son intégration académique et professionnelle.</li>
+									<li>Une adaptation des méthodes d’évaluation pourrait être nécessaire pour encadrer son usage et garantir un apprentissage pertinent.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Conclusion sur les enquêtes -->
+					<section class="mt-5">
+						<div class="observation-card text-center">
+							<h2><i class="bi bi-lightbulb"></i> Conclusion sur les enquêtes</h2>
+							<p>À travers ces enquêtes, nous avons observé que ...</p>
+						</div>
+					</section>
+
 				</div>
-			</section>
-
-			<!-- Transition entre la littérature et les enquêtes -->
-			<div class="text-center my-5">
-				<hr class="my-4" />
-				<h2 class="fw-bold text-muted">De la théorie à la pratique : observations sur le terrain</h2>
-				<p class="text-muted">
-					Après avoir exploré les apports de la littérature, nous avons mené des enquêtes pour confronter ces éléments
-					aux réalités du terrain.
-				</p>
-				<hr class="my-4" />
 			</div>
-
-			<h1 class="text-center mb-4">Observations des enquêtes</h1>
-
-			<div class="row">
-				<!-- Section Élèves -->
-				<div class="col-md-6">
-					<div class="observation-card">
-						<h2><i class="bi bi-person"></i> Élèves</h2>
-						<p>Observations recueillies auprès des élèves :</p>
-						<ul>
-							<li>
-								Les élèves ont souvent des difficultés en mathématiques, mais n’utilisent pas ChatGPT pour cette
-								matière.
-							</li>
-							<li>Ils perçoivent l’IA comme un outil à l'instar d'Internet, leur apportant des réponses rapides.</li>
-							<li>La fréquence d'utilisation varie en fonction des élèves, certains l'utilisant quotidiennement.</li>
-							<li>L’utilisation est principalement scolaire, avec des fonctions comme résumer et traduire.</li>
-							<li>La véracité des informations n’est pas une préoccupation majeure pour les élèves.</li>
-							<li>Leur motivation principale est d’aller plus vite dans leurs tâches scolaires.</li>
-							<li>Ils ne se préoccupent pas particulièrement de l’impact de l’IA sur leur confiance en eux.</li>
-							<li>
-								La notion de mérite n’est pas un sujet de réflexion, ChatGPT étant vu comme une aide parmi tant
-								d’autres telle que les parents.
-							</li>
-							<li>Ils ne seraient pas perturbés si ChatGPT venait à disparaître.</li>
-							<li>ChatGPT ne pourrait pas remplacer un enseignant.</li>
-							<li>L’outil ne semble pas modifier leur manière d’apprendre ou d’étudier.</li>
-							<li>Aucun élève interrogé n’est fermement opposé à l’usage de ChatGPT.</li>
-
-                            <!-- version GPT
-                            <li>ChatGPT est perçu comme un outil similaire à Internet, apportant des réponses rapides.</li>
-                            <li>Utilisé principalement pour l’école, notamment pour résumer et traduire.</li>
-                            <li>Fréquence variable, mais souvent plusieurs fois par semaine.</li>
-                            <li>Vérification des réponses rare, la rapidité est privilégiée.</li>
-                            <li>Ne change pas leur manière d’apprendre, ni leur confiance en eux.</li>
-                            <li>Son absence ne les perturberait pas, il est utile mais pas indispensable.</li>
-                            <li>Pas de remise en question sur le mérite, considéré comme une aide parmi d’autres.</li>
-                            <li>Ne peut pas remplacer un professeur, car l’humain reste essentiel.</li>
-                            <li>Aucun rejet marqué de l’outil, mais pas une révolution dans leur apprentissage.</li>
-                            -->
-						</ul>
-					</div>
-				</div>
-
-				<!-- Section Parents d'élèves -->
-				<div class="col-md-6">
-					<div class="observation-card">
-						<h2><i class="bi bi-people"></i> Parents d'élèves</h2>
-						<p>Observations recueillies auprès des parents :</p>
-						<ul>
-							<li>...</li>
-							<li>...</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Section Étudiants -->
-				<div class="col-md-6">
-					<div class="observation-card">
-						<h2><i class="bi bi-mortarboard"></i> Étudiants</h2>
-						<p>Observations recueillies auprès des étudiants :</p>
-						<ul>
-                            <li>ChatGPT est perçu comme un outil pratique pour gagner du temps et faciliter certaines tâches.</li>
-                            <li>Son utilisation est assez régulière, quelques fois par semaine, principalement pour corriger l’orthographe, reformuler des phrases ou chercher des idées.</li>
-                            <li>Il est utilisé pour mieux comprendre et approfondir un sujet, clarifier des explications, approfondir un concept ou consulter des exemples de questions d’examen.</li>
-                            <li>Les erreurs sont fréquentes, notamment dans certaines matières comme le droit. </li>
-                            <li>La vérification et la recherche de sources sont essentielles pour les travaux importants.</li>
-                            <li>Son usage ne modifie pas la méthode d’apprentissage, il reste un outil complémentaire.</li>
-                            <li>Le principal avantage reste le gain de temps dans la réalisation des tâches académiques.</li>
-                            <li>Sa disparition ne provoquerait pas de perturbation majeure, il est perçu comme un outil utile mais non indispensable.</li>
-                            <li>Il ne contribue pas au développement de l’intelligence, mais favorise un certain esprit critique.</li>
-                            <li>Son utilisation ne génère pas forcément de frustration.</li>
-                            <li>La fierté du travail dépend de l’implication personnelle : s’il sert d’aide ponctuelle, elle est préservée, mais s’il fait tout à la place de l’étudiant, elle diminue.</li>
-                            <li>En cas de difficulté, l’entraide entre étudiants reste privilégiée avant d’avoir recours à l’outil.</li>
-                            <li>Ses limites résident dans son manque de fiabilité, la quantité limité de sources et connaissances.</li>
-                            <li>Il ne peut pas remplacer un enseignant, qui apporte une interaction humaine, s'adapte aux étudiants, utilise des schémas.</li>
-                            <li>Dans l’enseignement supérieur, il doit rester un OUTIL complémentaire et non une nécessité.</li>
-        
-                            <!-- version GPT
-							<li>ChatGPT est un outil qui aide, mais ne fait pas le travail à leur place.</li>
-							<li>Utilisé pour reformuler, corriger et approfondir, surtout en recherche d’idées.</li>
-							<li>Fiabilité limitée : vérification nécessaire pour les travaux importants.</li>
-							<li>Ne change pas la méthode de travail, mais permet de gagner du temps.</li>
-							<li>Son absence ne serait pas un problème, il reste un outil parmi d’autres.</li>
-							<li>Peut réduire l’esprit critique et l’assiduité, mais utile s’il est bien utilisé.</li>
-							<li>Ne remplacera jamais un professeur, l’interaction humaine reste essentielle.</li>
-							<li>Devrait rester un outil complémentaire dans les études supérieures.</li>
-                            -->
-						</ul>
-					</div>
-				</div>
-
-				<!-- Section Professeurs -->
-				<div class="col-md-6">
-					<div class="observation-card">
-						<h2><i class="bi bi-person-badge"></i> Professeurs</h2>
-						<p>Observations recueillies auprès des professeurs :</p>
-						<ul>
-							<li>...</li>
-							<li>...</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Section Doctorants -->
-				<div class="col-md-6">
-					<div class="observation-card">
-						<h2><i class="bi bi-book"></i> Doctorants</h2>
-						<p>Observations recueillies auprès des doctorants :</p>
-						<ul>
-							<li>ChatGPT est omniprésent dans leur quotidien et utilisé principalement pour des raisons professionnelles.</li>
-                            <li>Son usage est systématique, souvent avec un abonnement pro pour profiter des fonctionnalités avancées.</li>
-                            <li>Il est perçu comme un outil efficace pour gagner du temps, notamment pour accéder rapidement à l’information et améliorer certaines tâches comme la correction d’e-mails.</li>
-                            <li>L’impact sur les compétences dépend de l’usage : une utilisation réfléchie peut enrichir les connaissances, tandis qu’un simple copier-coller risque d’appauvrir la compréhension.</li>
-                            <li>La protection des données personnelles est un sujet de préoccupation, notamment si les informations saisies sont exploitées à d’autres fins.</li>
-                            <li>La question du mérite n’est pas centrale, l’IA étant considérée comme un outil de travail complémentaire et non une tricherie.</li>
-                            <li>L’adaptation aux nouvelles technologies est perçue comme une nécessité, et l’IA s’intègre progressivement à leur méthodologie, comme les correcteurs orthographiques.</li>
-                            <li>Son impact sur l’apprentissage varie : certains réussissent des matières sans les comprendre réellement, ce qui peut poser problème sur le long terme.</li>
-                            <li>L’évolution des lois et des régulations jouera un rôle clé dans son intégration académique et professionnelle.</li>
-                            <li>Une adaptation des méthodes d’évaluation pourrait être nécessaire pour encadrer son usage et garantir un apprentissage pertinent.</li>
-                        </ul>
-					</div>
-				</div>
-			</div>
-
-			<!-- Conclusion sur les enquêtes -->
-			<section class="mt-5">
-				<div class="observation-card text-center">
-					<h2><i class="bi bi-lightbulb"></i> Conclusion sur les enquêtes</h2>
-					<p>À travers ces enquêtes, nous avons observé que ...</p>
-				</div>
-			</section>
 		</main>
 
-		<!-- Footer -->
 		<footer>
-			<p>&copy; 2025 Mon Projet | <a href="privacy.html">Mentions légales</a></p>
+			<div id="footer-container"></div>
+			<script src="/js/footer.js"></script>
 		</footer>
+		
 
 		<!-- Lien vers le JavaScript de Bootstrap via CDN -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
