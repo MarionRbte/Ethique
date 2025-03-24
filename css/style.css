@@ -81,7 +81,8 @@ header nav .container {
 
 header nav .navbar-nav .nav-link {
   color: #333; /* Texte sombre pour la navbar */
-  font-size: 16px; /* Taille de texte ajustée pour être plus compact */
+  font-size: 20px; /* Taille de texte ajustée pour être plus compact */
+  text-align: center;
   padding-left: 10px; /* Espacement intérieur gauche des liens */
   padding-right: 10px; /* Espacement intérieur droit des liens */
 }
@@ -106,14 +107,14 @@ header nav .navbar-toggler-icon {
 }
 
 header nav .navbar-brand img {
-  width: 180px; /* Augmente la largeur de l'image */
+  width: 220px; /* Augmente la largeur de l'image */
   height: auto; /* Garde les proportions */
   max-width: 100%; /* Évite que l'image déborde */
 }
 
 @media (min-width: 992px) {
   header nav .navbar-brand img {
-    width: 10vw; /* Augmenter à 25% pour les très grands écrans */
+    width: 20vw; /* Augmenter à 25% pour les très grands écrans */
   }
 }
 
