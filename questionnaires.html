@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Questionnaires</title>
+
+		<!-- Lien vers Bootstrap CSS via CDN -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Lien vers ton fichier CSS personnalisé -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Chemin vers le fichier CSS séparé -->
+		<header>
+			<section class="py-5">
+				<div id="navbar-container"></div>
+				<script src="/js/navbar.js"></script>
+			</section>
+		</header>
+	</head>
+
+	<body>
+		<!-- Section principale -->
+		<main>
+			<div class="container-fluid">
+				<div class="card shadow-lg bg-light-custom mx-auto w-100">
+					<div class="card-body">
+						<h1 class="display-2 mb-0 text-center"><b>Questionnaires</b></h1>
+
+						<!-- Onglets de navigation -->
+						<ul class="nav nav-tabs" id="questionnaireTabs" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button
+									class="nav-link active"
+									id="eleves-tab"
+									data-bs-toggle="tab"
+									data-bs-target="#eleves"
+									type="button"
+									role="tab"
+								>
+									Élèves
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button
+									class="nav-link"
+									id="parents-tab"
+									data-bs-toggle="tab"
+									data-bs-target="#parents"
+									type="button"
+									role="tab"
+								>
+									Parents
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button
+									class="nav-link"
+									id="etudiants-tab"
+									data-bs-toggle="tab"
+									data-bs-target="#etudiants"
+									type="button"
+									role="tab"
+								>
+									Étudiants
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button
+									class="nav-link"
+									id="professeurs-tab"
+									data-bs-toggle="tab"
+									data-bs-target="#professeurs"
+									type="button"
+									role="tab"
+								>
+									Professeurs
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button
+									class="nav-link"
+									id="doctorants-tab"
+									data-bs-toggle="tab"
+									data-bs-target="#doctorants"
+									type="button"
+									role="tab"
+								>
+									Doctorants
+								</button>
+							</li>
+						</ul>
+
+						<!-- Contenu des onglets -->
+						<div class="tab-content mt-3" id="questionnaireContent">
+							<div class="tab-pane fade show active" id="eleves" role="tabpanel">
+								<h3>Questionnaire pour les élèves</h3>
+
+								<br />
+
+								<ul>
+                                    <p>Informations générales</p>
+
+                                    <ul>
+                                        <li>Quel est ton âge ? </li>
+                                        <li>Quel est ton genre ? </li>
+                                        <li>Dans quelle école es-tu ? </li>
+                                    </ul>
+
+                                    <br />
+
+									<p>Utilisation de l’intelligence artificielle</p>
+
+									<ul>
+										<li>En quelle année es-tu ?</li>
+										<li>Comment te décrirais-tu en tant qu’élève ?</li>
+										<li>Quel est le cours dans lequel tu as le plus de difficultés ?</li>
+										<li>Comment définirais-tu l’intelligence artificielle (IA) en quelques mots ?</li>
+										<li>As-tu déjà utilisé ChatGPT ?</li>
+										<li>À quelle fréquence utilises-tu ChatGPT ?</li>
+										<li>Pourquoi utilises-tu ChatGPT ?</li>
+										<li>Comment utilises-tu ChatGPT dans tes études ?</li>
+										<li>Est-ce devenu un réflexe, une habitude d’utiliser ChatGPT ou c’est en dernier recours ?</li>
+										<li>Peux-tu me donner un exemple précis où ChatGPT t’a été particulièrement utile ?</li>
+										<li>
+											Quelles sont tes habitudes lorsque tu l’utilises ? Vérifies-tu ses réponses ou les acceptes-tu
+											sans vérifier ?
+										</li>
+										<li>As-tu un abonnement payant (ChatGPT Plus) ?</li>
+									</ul>
+
+									<br />
+
+									<p>Impact sur les études et la réflexion personnelle</p>
+
+									<ul>
+										<li>Depuis que tu utilises ChatGPT, as-tu l’impression que cela a changé ta façon d’apprendre ?</li>
+										<li>As-tu remarqué une évolution de tes notes depuis que tu utilises ChatGPT ?</li>
+										<li>As-tu l’impression d’être plus ou moins compétent(e) grâce à ChatGPT ?</li>
+										<li>As-tu plus confiance en toi grâce à ChatGPT ?</li>
+										<li>Lorsque tu fais un devoir avec l’aide de ChatGPT, ressens-tu :</li>
+										<ul>
+											<input type="checkbox" />
+											<label for="satisfaction">Une satisfaction car j’ai bien compris le sujet</label>
+											<br />
+											<input type="checkbox" />
+											<label for="merite">Un sentiment de mérite, car j’ai su l’utiliser intelligemment</label>
+											<br />
+											<input type="checkbox" />
+											<label for="frustration">Une frustration, car je n’ai pas tout fait par moi-même</label>
+											<br />
+											<input type="checkbox" />
+											<label for="doute">Un doute, car je ne suis pas sûr(e) de la fiabilité des réponses</label>
+										</ul>
+									</ul>
+
+									<br />
+
+									<p>ChatGPT et l’aide à la compréhension des cours</p>
+
+									<ul>
+										<li>Lorsque tu ne comprends pas quelque chose en cours, à qui demandes-tu en priorité ?</li>
+										<ul>
+											<input type="checkbox" />
+											<label for="satisfaction">Un professeur</label>
+											<br />
+											<input type="checkbox" />
+											<label for="merite">Un camarade de classe</label>
+											<br />
+											<input type="checkbox" />
+											<label for="frustration">Un membre de ta famille</label>
+											<br />
+											<input type="checkbox" />
+											<label for="doute">ChatGPT</label>
+											<br />
+											<input type="checkbox" />
+											<label for="doute">Autre</label>
+										</ul>
+										<li>Si ChatGPT n’existait plus, comment ferais-tu pour apprendre ou faire tes devoirs ?</li>
+										<li>Selon toi, ChatGPT peut-il remplacer un enseignant ?</li>
+									</ul>
+
+									<br />
+
+									<p>Réflexion sur le développement intellectuel</p>
+
+									<ul>
+										<li>Penses-tu que l'utilisation de ChatGPT développe ton intelligence ?</li>
+										<li>As-tu remarqué que tu réfléchis différemment depuis que tu utilises ChatGPT ?</li>
+										<li>Dirais-tu que ChatGPT t’aide à être plus rapide dans tes devoirs ?</li>
+										<li>As-tu déjà détecté des erreurs dans les réponses de ChatGPT ?</li>
+										<li>Te méfies-tu des réponses données par ChatGPT ?</li>
+									</ul>
+								</ul>
+							</div>
+
+							<div class="tab-pane fade" id="parents" role="tabpanel">
+								<h3>Questionnaire pour les parents</h3>
+
+								<br />
+
+								<ul>
+									<p>Informations générales</p>
+
+									<ul>
+										<li>Combien d’enfants avez-vous actuellement en secondaire ?</li>
+										<li>En quelle classe sont-ils ?</li>
+										<li>
+											Comment décririez-vous leurs résultats scolaires ? (bons, moyens, en difficulté, en progrès, etc.)
+										</li>
+										<li>Quel(s) cours semblent être les plus difficiles pour eux ? Pourquoi selon vous ?</li>
+									</ul>
+
+									<br />
+
+									<p>Perception de l’intelligence artificielle et de ChatGPT</p>
+
+									<ul>
+										<li>Comment définiriez-vous l’intelligence artificielle avec vos propres mots ?</li>
+										<li>Avez-vous déjà utilisé ChatGPT vous-même ? Si oui, dans quel contexte ?</li>
+										<li>Savez-vous si vos enfants utilisent ChatGPT ?</li>
+										<li>À votre avis, pourquoi l’utilisent-ils ?</li>
+									</ul>
+
+									<br />
+
+									<p>L'impact de ChatGPT sur l’apprentissage</p>
+
+									<ul>
+										<li>Avez-vous remarqué un changement dans leur manière d’étudier depuis l’arrivée de ChatGPT ?</li>
+										<li>Pensez-vous que cela a eu un impact sur leurs notes ? Dans quel sens ?</li>
+										<li>
+											Vos enfants vous posent-ils autant de questions qu’avant sur leurs devoirs ou ont-ils tendance à
+											demander à ChatGPT ?
+										</li>
+										<li>
+											Les encouragez-vous à utiliser ChatGPT pour les aider dans leurs études ? Pourquoi ou pourquoi pas
+											?
+										</li>
+										<li>
+											Avez-vous déjà ressenti une forme de frustration en constatant qu’ils préféraient poser leurs
+											questions à ChatGPT plutôt qu’à vous ?
+										</li>
+									</ul>
+
+									<br />
+
+									<p>ChatGPT et le développement intellectuel</p>
+
+									<ul>
+										<li>
+											Pensez-vous que l’utilisation de ChatGPT les aide à développer leur intelligence et leur réflexion
+											? Pourquoi ?
+										</li>
+										<li>
+											Craignez-vous que cela les rende moins autonomes ou moins capables de réfléchir par eux-mêmes ?
+										</li>
+										<li>Selon vous, quels sont les avantages et les limites de ChatGPT pour l’apprentissage ?</li>
+										<li>
+											Si ChatGPT n’existait plus demain, pensez-vous que cela aurait un impact sur la manière dont vos
+											enfants étudient ? Pourquoi ?
+										</li>
+									</ul>
+
+									<br />
+
+									<p>Réflexion finale</p>
+
+									<ul>
+										<li>Pensez-vous que ChatGPT pourrait remplacer un professeur ? Pourquoi ou pourquoi pas ?</li>
+										<li>Comment imaginez-vous l’avenir de l’intelligence artificielle dans l’éducation ?</li>
+										<li>
+											Enfin, en une phrase, comment décririez-vous l’impact de ChatGPT sur les études de vos enfants ?
+										</li>
+									</ul>
+								</ul>
+							</div>
+
+							<div class="tab-pane fade" id="etudiants" role="tabpanel">
+								<h3>Questionnaire pour les étudiants</h3>
+
+								<br />
+
+								<ul>
+									<p>Informations générales</p>
+
+									<ul>
+										<li>Dans quel domaine d’études êtes-vous inscrit(e) ?</li>
+										<li>En quelle année universitaire êtes-vous ?</li>
+										<li>
+											Comment décririez-vous votre approche des études ? (plutôt autonome, organisé(e), en difficulté,
+											procrastinateur(trice), etc.)
+										</li>
+										<li>Quelle(s) matière(s) vous semblent les plus complexes dans votre cursus ? Pourquoi ?</li>
+									</ul>
+
+									<br />
+
+									<p>Perception de l’intelligence artificielle et de ChatGPT</p>
+
+									<ul>
+										<li>Comment définiriez-vous l’intelligence artificielle avec vos propres mots ?</li>
+										<li>Est-ce que vous utilisez ChatGPT dans votre quotidien ?</li>
+										<li>
+											Quel rôle attribuez-vous à ChatGPT dans vos études ? (outil d’aide, complément aux cours,
+											distraction, etc.)
+										</li>
+									</ul>
+
+									<br />
+
+									<p>Utilisation de ChatGPT</p>
+
+									<ul>
+										<li>À quelle fréquence utilisez-vous ChatGPT ?</li>
+										<li>
+											Dans quel(s) contexte(s) l’utilisez-vous le plus ? (recherches, résumés, compréhension de cours,
+											écriture, etc.)
+										</li>
+										<li>Pouvez-vous me donner un exemple précis où ChatGPT vous a été particulièrement utile ?</li>
+										<li>
+											Avez-vous déjà trouvé des erreurs ou des limites dans ses réponses ? Comment les gérez-vous ?
+										</li>
+										<li>Vérifiez-vous systématiquement les informations fournies par ChatGPT ? Pourquoi ?</li>
+									</ul>
+
+									<br />
+
+									<p>Impact sur votre apprentissage et vos résultats académiques</p>
+
+									<ul>
+										<li>
+											Depuis que vous utilisez ChatGPT, avez-vous remarqué un changement dans votre façon d’apprendre ?
+										</li>
+										<li>ChatGPT vous aide-t-il à mieux comprendre certaines notions ? Si oui, comment ?</li>
+										<li>
+											Avez-vous constaté une évolution de vos résultats académiques depuis que vous l’utilisez ? Dans
+											quel sens ?
+										</li>
+										<li>
+											Diriez-vous que ChatGPT vous fait gagner du temps ou au contraire, vous en fait perdre ? Pourquoi
+											?
+										</li>
+										<li>
+											Si ChatGPT n’existait plus demain, en quoi cela changerait-il votre méthode de travail et
+											d’apprentissage ?
+										</li>
+									</ul>
+
+									<br />
+
+									<p>ChatGPT et le développement intellectuel</p>
+
+									<ul>
+										<li>
+											Pensez-vous que l’utilisation de ChatGPT vous aide à développer votre intelligence et votre esprit
+											critique ? Pourquoi ?
+										</li>
+										<li>
+											Avez-vous remarqué un changement dans votre manière de réfléchir ou d’analyser depuis que vous
+											l’utilisez ?
+										</li>
+										<li>
+											Lorsque vous réalisez un travail entièrement par vous-même sans ChatGPT, ressentez-vous une
+											satisfaction différente ? Pourquoi ?
+										</li>
+										<li>
+											Lorsqu’une notion vous semble complexe, vers qui ou quoi vous tournez-vous en priorité ?
+											(professeurs, autres étudiants, ChatGPT, livres, autres) et pourquoi ?
+										</li>
+										<li>
+											Selon vous, quels sont les avantages et les limites de ChatGPT dans l’apprentissage universitaire
+											?
+										</li>
+									</ul>
+
+									<br />
+
+									<p>Réflexion finale</p>
+
+									<ul>
+										<li>Pensez-vous que ChatGPT pourrait remplacer un professeur ? Expliquez votre réponse.</li>
+										<li>
+											Comment imaginez-vous l’avenir de l’intelligence artificielle dans l’éducation universitaire ?
+										</li>
+										<li>Enfin, en une phrase, comment décririez-vous l’impact de ChatGPT sur vos études ?</li>
+									</ul>
+								</ul>
+							</div>
+
+                            <div class="tab-pane fade" id="professeurs" role="tabpanel">
+								<h3>Questionnaire pour les professeurs</h3>
+
+                                <br />
+
+                                <ul>
+									<p>Informations générales</p>
+                                </ul>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="doctorants" role="tabpanel">
+                                <h3>Questionnaire pour les doctorants</h3>
+
+                                <br />
+
+                                <ul>
+									<p>Informations générales</p>
+                                </ul>
+
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div id="footer-container"></div>
+			<script src="/js/footer.js"></script>
+		</footer>
+
+		<!-- Lien vers le JavaScript de Bootstrap via CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
