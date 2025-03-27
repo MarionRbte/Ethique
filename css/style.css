@@ -1,238 +1,219 @@
-
-
 .card {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 main {
-  padding: 50px 15px; /* Espacement autour du contenu */
+	padding: 50px 15px; /* Espacement autour du contenu */
 }
 
 body {
-  background: linear-gradient(to bottom, #ffffff 250px, rgb(107, 107, 200)); /* Dégradé de blanc à bleu */
-  min-height: 100vh; /* Assure que le body couvre toute la hauteur de la fenêtre */
-  color: #333;
+	background: linear-gradient(to bottom, #ffffff 250px, rgb(107, 107, 200)); /* Dégradé de blanc à bleu */
+	min-height: 100vh; /* Assure que le body couvre toute la hauteur de la fenêtre */
+	color: #333;
 }
-
 
 .bg-light-custom {
-  background: rgba(255, 255, 255, 0.15); 
-  border-radius: 10px; 
-  padding: 10px;
-  backdrop-filter: blur(5px);
-  max-width: 90%; 
-  width: 100%;
+	background: rgba(255, 255, 255, 0.15);
+	border-radius: 10px;
+	padding: 10px;
+	backdrop-filter: blur(5px);
+	max-width: 90%;
+	width: 100%;
 }
-
 
 main h1 {
-  font-size: 30px;
-  font-weight: bold;
-  color: red-700;
-  padding-top: 50px;
-  padding-bottom: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	color: red-700;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 main h2 {
-  font-size: 22px;
-  color: #5727e6;
-  font-style: italic;
-  text-align: center;
-  padding-bottom: 10px;
+	font-size: 22px;
+	color: #5727e6;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 10px;
 }
 main h3 {
-  font-size: 20px;
-  color: #333;
+	font-size: 20px;
+	color: #333;
 }
 main h4 {
-  font-size: 15px;
-  color: #333;
+	font-size: 15px;
+	color: #333;
 }
 
 main p {
-  font-size: 18px;
-  line-height: 1.6;
+	font-size: 18px;
+	line-height: 1.6;
 }
 
-section{
-  padding-bottom: 30px;
+section {
+	padding-bottom: 30px;
 }
 
 ul {
-  list-style-type: circle;
-  content: "★";
-  margin-left: 20px;
+	list-style-type: circle;
+	content: "★";
+	margin-left: 20px;
 }
-
-
 
 /* Navbar */
 header nav {
-  background-color: #ffffff; /* Fond blanc pour la navbar */
-  height: auto; /* Assure que la hauteur s'ajuste automatiquement au contenu */
-  padding-top: 1px; /* Réduit l'espacement supérieur */
-  padding-bottom: 1px; /* Réduit l'espacement inférieur */
+	background-color: #ffffff; /* Fond blanc pour la navbar */
+	height: auto; /* Assure que la hauteur s'ajuste automatiquement au contenu */
+	padding-top: 1px; /* Réduit l'espacement supérieur */
+	padding-bottom: 1px; /* Réduit l'espacement inférieur */
 }
 
 header nav .container {
-  padding-left: 10px; /* Réduit l’espace à gauche */
-  padding-right: 10px; /* Réduit l’espace à droite */
-  max-width: 100%; /* Évite que la navbar soit trop large */
+	padding-left: 10px; /* Réduit l’espace à gauche */
+	padding-right: 10px; /* Réduit l’espace à droite */
+	max-width: 100%; /* Évite que la navbar soit trop large */
 }
 
 header nav .navbar-nav .nav-link {
-  color: #333; /* Texte sombre pour la navbar */
-  font-size: 20px; /* Taille de texte ajustée pour être plus compact */
-  text-align: center;
-  padding-left: 10px; /* Espacement intérieur gauche des liens */
-  padding-right: 10px; /* Espacement intérieur droit des liens */
+	color: #333; /* Texte sombre pour la navbar */
+	font-size: 20px; /* Taille de texte ajustée pour être plus compact */
+	text-align: center;
+	padding-left: 10px; /* Espacement intérieur gauche des liens */
+	padding-right: 10px; /* Espacement intérieur droit des liens */
 }
 
 header nav .navbar-nav .nav-link.actif {
-  color: #6f62d2; /* Couleur rouge pour l'élément actif */
-  text-decoration: none; /* Pas de soulignement */
-  background-color: transparent; /* Pas de fond coloré */
-  border: none; /* Pas de bordure */
-  outline: none; /* Pas de contour visible lors du focus */
-  white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
+	color: #6f62d2; /* Couleur rouge pour l'élément actif */
+	text-decoration: none; /* Pas de soulignement */
+	background-color: transparent; /* Pas de fond coloré */
+	border: none; /* Pas de bordure */
+	outline: none; /* Pas de contour visible lors du focus */
+	white-space: nowrap; /* Empêche le texte de se diviser en plusieurs lignes */
 }
 header nav .navbar-nav .nav-link:hover {
-  color: #b7b5b5; /* Rouge un peu plus clair au survol */
-  transition: color 0.3s ease-in-out;
+	color: #b7b5b5; /* Rouge un peu plus clair au survol */
+	transition: color 0.3s ease-in-out;
 }
 
-
-
 header nav .navbar-toggler-icon {
-  background-color: #fff; /* Couleur sombre pour l'icône de menu hamburger */
+	background-color: #fff; /* Couleur sombre pour l'icône de menu hamburger */
 }
 
 header nav .navbar-brand img {
-  width: 220px; /* Augmente la largeur de l'image */
-  height: auto; /* Garde les proportions */
-  max-width: 100%; /* Évite que l'image déborde */
+	width: 220px; /* Augmente la largeur de l'image */
+	height: auto; /* Garde les proportions */
+	max-width: 100%; /* Évite que l'image déborde */
 }
 
 @media (min-width: 992px) {
-  header nav .navbar-brand img {
-    width: 20vw; /* Augmenter à 25% pour les très grands écrans */
-  }
+	header nav .navbar-brand img {
+		width: 20vw; /* Augmenter à 25% pour les très grands écrans */
+	}
 }
 
 @media (min-width: 1200px) {
-  header nav .navbar-brand img {
-    width: 15vw; /* Augmenter à 25% pour les très grands écrans */
-  }
+	header nav .navbar-brand img {
+		width: 15vw; /* Augmenter à 25% pour les très grands écrans */
+	}
 }
-
-
-
 
 /* Ajustement de la hauteur de la navbar en fonction du contenu */
 .navbar-collapse {
-  justify-content: flex-end; /* Aligne les éléments de droite si nécessaire */
+	justify-content: flex-end; /* Aligne les éléments de droite si nécessaire */
 }
 .nav-item {
-  display: inline-block; /* S'assurer que le <li> est en ligne */
+	display: inline-block; /* S'assurer que le <li> est en ligne */
 }
 
 .nav-link {
-  white-space: nowrap; /* Empêche le retour à la ligne dans le lien */
+	white-space: nowrap; /* Empêche le retour à la ligne dans le lien */
 }
 
-
-
-
 .list-group {
-  background-color: transparent !important;
-  border: none;
+	background-color: transparent !important;
+	border: none;
 }
 
 .list-group-item {
-  background-color: rgba(255, 255, 255, 0.1) !important; /* Légèrement transparent */
-  border: none; /* Supprime les bordures */
-  color: #706e6e; /* Texte en gris clair pour la lisibilité */
-  transition: background-color 0.3s ease-in-out;
+	background-color: rgba(255, 255, 255, 0.1) !important; /* Légèrement transparent */
+	border: none; /* Supprime les bordures */
+	color: #706e6e; /* Texte en gris clair pour la lisibilité */
+	transition: background-color 0.3s ease-in-out;
 }
 
 .list-group-item:hover {
-  background-color: rgba(255, 255, 255, 0.2) !important; /* Effet au survol */
+	background-color: rgba(255, 255, 255, 0.2) !important; /* Effet au survol */
 }
 
-
-
-
 footer {
-  background-color:  rgb(123, 123, 202);
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+	background-color: rgb(123, 123, 202);
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
 }
 
 footer a {
-  color: #ffffff;
-  text-decoration: none;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 footer a:hover {
-  color: #007bff;
+	color: #007bff;
 }
 
 .container {
-  max-width: 1000px;
+	max-width: 1000px;
 }
 
 /* ici pour les photos d'équipes */
 
 .icon {
-  position: relative;
-  bottom: 11px
+	position: relative;
+	bottom: 11px;
 }
 
 .mt-100 {
-  margin-top: 100px
+	margin-top: 100px;
 }
 
 .profile img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 }
 
 .card {
-  border-radius: 15px;
-  margin-left: 30px;
-  margin-right: 30px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-  background-color: rgba(255, 255, 255, 0.7) !important; /* Effet au survol */
+	border-radius: 15px;
+	margin-left: 30px;
+	margin-right: 30px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: rgba(255, 255, 255, 0.7) !important; /* Effet au survol */
 }
 
 .card-body {
-  position: relative;
-  bottom: 35px
+	position: relative;
+	bottom: 35px;
 }
 
 .btn {
-  margin-top: 36px;
-  margin-bottom: 45px;
-  background-color: #AB47BC;
-  border: none;
-  color: #fff
+	margin-top: 36px;
+	margin-bottom: 45px;
+	background-color: #ab47bc;
+	border: none;
+	color: #fff;
 }
 
 .btn:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  color: #fff
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	color: #fff;
 }
 
 .header {
-  padding-top: 40px
+	padding-top: 40px;
 }
 
-.observation-card{
-  padding-top: 40px;
-  padding-bottom: 40px
-
+.observation-card {
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
-
